@@ -1,39 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: melrose <melrose@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/26 17:25:40 by melrose           #+#    #+#             */
-/*   Updated: 2025/03/02 04:03:16 by melrose          ###   ########.fr       */
+/*   Created: 2025/03/02 03:49:02 by melrose           #+#    #+#             */
+/*   Updated: 2025/03/02 04:03:20 by melrose          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-int	ft_atoi(const char *nptr)
+int	ft_isalpha(int c)
 {
-	int	i;
-	int	value;
-	int	variable;
-
-	variable = 1;
-	value = 0;
-	i = 0;
-	while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == 32)
-		i++;
-	while (nptr[i] == '-' || nptr[i] == '+')
-	{
-		if (nptr[i] == '-')
-			variable *= -1;
-		i++;
-	}
-	while (nptr[i] >= '0' && nptr[i] <= '9')
-	{
-		value *= 10;
-		value += (nptr[i] - 48);
-		i++;
-	}
-	return (value * variable);
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+		return (true);
+	return (false);
 }
