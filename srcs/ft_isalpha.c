@@ -6,11 +6,11 @@
 /*   By: melrose <melrose@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/02 03:49:02 by melrose           #+#    #+#             */
-/*   Updated: 2025/03/02 04:03:20 by melrose          ###   ########.fr       */
+/*   Updated: 2025/03/04 01:25:41 by melrose          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "../libft.h"
 
 int	ft_isalpha(int c)
 {

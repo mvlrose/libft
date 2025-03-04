@@ -6,12 +6,11 @@
 /*   By: melrose <melrose@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/02 04:05:06 by melrose           #+#    #+#             */
-/*   Updated: 2025/03/02 04:19:37 by melrose          ###   ########.fr       */
+/*   Updated: 2025/03/04 01:38:49 by melrose          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
-#include <string.h>
+#include "../libft.h"
 
 size_t	ft_strlen(const char *s)
 {
@@ -19,8 +18,6 @@ size_t	ft_strlen(const char *s)
 
 	i = 0;
 	while (s[i])
-	{
 		i++;
-	}
 	return (i);
 }

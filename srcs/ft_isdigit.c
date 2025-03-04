@@ -1,26 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: melrose <melrose@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/26 17:25:40 by melrose           #+#    #+#             */
-/*   Updated: 2025/03/02 03:59:42 by melrose          ###   ########.fr       */
+/*   Created: 2025/03/04 01:39:10 by melrose           #+#    #+#             */
+/*   Updated: 2025/03/04 01:41:53 by melrose          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "../libft.h"
 
-# include <unistd.h>
-# include <stdlib.h>
-# include <fcntl.h>
-# include <stdio.h>
-# include <ctype.h>
-# include <stdbool.h>
-
-int	ft_atoi(const char *nptr);
-int	ft_isalpha(int c);
-
-#endif
+int	ft_isdigit(int c)
+{
+	if ((c >= 48 && c <= 57))
+		return (true);
+	return (false);
+}

@@ -1,6 +1,6 @@
 {
 	"files.associations": {
 		"libft.h": "c",
-		"stdio.h": "c"
+		"ft_isascii.C": "cpp"
 	}
 }
