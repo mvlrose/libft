@@ -6,7 +6,7 @@
 /*   By: melrose <melrose@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 17:25:40 by melrose           #+#    #+#             */
-/*   Updated: 2025/03/04 22:26:39 by melrose          ###   ########.fr       */
+/*   Updated: 2025/03/05 04:15:19 by melrose          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,6 @@ int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
+void	*ft_memset(void *b, int c, size_t len);
 
 #endif
